@@ -1,0 +1,43 @@
+<!-- Define the document type and language -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding -->
+    <meta charset="UTF-8">
+    <!-- Define the rendering mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Specify the viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Set the title of the page -->
+    <title>Live User Filter</title>
+</head>
+<body>
+    
+    <!-- Wrapper to center content vertically and horizontally -->
+    <div class="wrapper">
+        <!-- Container for the user list -->
+        <div class="container">
+            <!-- Header section -->
+            <header class="header">
+                <!-- Main title -->
+                <h4 class="title">Live User Filter</h4>
+                <!-- Subtitle with instructions for searching -->
+                <small class="sub-title">Search by name and/or location</small>
+                <!-- Input field for filtering users -->
+                <input type="text" placeholder="Search" id="filter">
+            </header>
+            <!-- Unordered list to display the user data -->
+            <ul id="result" class="user-list">
+                <!-- Placeholder list item to show "Loading..." before data is fetched -->
+                <li><h3>Loading...</h3></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Script tag to link the external JavaScript file -->
+    <script src="/script.js"></script>
+</body>
+</html>

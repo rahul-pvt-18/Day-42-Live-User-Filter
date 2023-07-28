@@ -1,0 +1,116 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Use Roboto as the font family for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set box-sizing, margins, and paddings for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Wrapper to center content vertically and horizontally */
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f9fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container for the user list */
+.container {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Styling for the title */
+.title {
+    margin: 0%;
+}
+
+/* Styling for the sub-title */
+.sub-title {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+/* Header styles with a blue background and white text */
+.header {
+    background-color: #3e57db;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+/* Input field within the header */
+.header input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+/* Remove focus outline for the header input */
+.header input:focus {
+    outline: none;
+}
+
+/* Styling for the user list */
+.user-list {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0%;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Styling for each user list item */
+.user-list li {
+    display: flex;
+    padding: 20px;
+}
+
+/* Styling for user images within the list */
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
+/* Styling for user information within the list */
+.user-list .user-info {
+    margin-left: 10px;
+}
+
+/* Styling for user names */
+.user-list .user-info h4 {
+    margin: 0 0 10px;
+}
+
+/* Styling for user details (e.g., location) */
+.user-list .user-info p {
+    font-size: 12px;
+}
+
+/* Add a bottom border to all list items except the last one */
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+/* Hide list items with the 'hide' class */
+.user-list li.hide {
+    display: none;
+}
